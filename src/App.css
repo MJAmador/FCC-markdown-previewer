@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(112, 175, 173);
+  color: black;
+}
+
+.boxes-container {
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 20px;
+  width: 80%;
+}
+
+.editor-title {
+  font-size: 20px;
+  margin: auto;
+  padding-bottom: 2px;
+  width: 85.7%;
+  background-color: rgb(23, 155, 142);
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px 4px rgb(97, 96, 96);
+}
+
+#editor {
+  font-size: 16px;
+  outline: none;
+  width: 85%;
+  height: 30vh;
+  overflow: auto;
+  background-color: rgb(166, 221, 213);
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px 4px rgb(97, 96, 96);
+}
+
+.textarea:focus{
+  box-shadow: 0px 0px 3px 3px royalblue;
+}
+
+.previewer-title {
+  font-size: 22px;
+  padding-bottom: 3px;
+  margin: auto;
+  margin-top: 20px;
+  width: auto;
+  background-color: rgb(23, 155, 142);
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px 4px rgb(97, 96, 96);
+}
+
+#preview {
+  font-size: 18px;
+  padding: 20px;
+  padding-top: 1px;
+  text-align: left;
+  background-color: rgb(166, 221, 213);
+  color: black;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px 4px rgb(97, 96, 96);
+  overflow: auto;
+}
+
+#preview code {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 5px 0px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#preview pre {
+  background-color: #fff;
+  padding: 10px;
+}
+
+#preview img {
+  max-width: 100%;
+  padding: auto;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .boxes-container {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .editor-title {
+    width: 78.5%;
+  }
+
+  #editor {
+    width: 78%;
+  }
+}
+
